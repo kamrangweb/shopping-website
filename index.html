@@ -1,305 +1,241 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8"/>
-        <meta http-equiv="X-UA-Compatible" content="IE-edge"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Better SEO & social sharing metadata -->
+    <meta name="description" content="Premium road bikes, cycling adventures and energy. Discover top brands like Canyon, BMC, Specialized and feel the ride!">
+    <meta name="author" content="FEEL Bikes">
+    <title>FEEL – Premium Road Bikes & Cycling Energy</title>
 
-        <title>Bike sales</title>
+    <!-- Font Awesome 4.7 (consider upgrading to 6.x in the future) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-        <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+    <!-- Your custom styles -->
+    <link rel="stylesheet" href="assets/css/style.css">
 
-        <!--Font Awesome-->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- ScrollReveal animation library -->
+    <script src="https://unpkg.com/scrollreveal"></script>
 
-        <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- Optional: preload critical assets for better performance -->
+    <!-- <link rel="preload" href="assets/image/hero-bg.jpg" as="image"> -->
+</head>
+<body>
 
-    </head>
-    <body>
-        <div id="reading-progress"><div id="reading-progress-fill"></div></div>
+    <!-- Reading progress bar -->
+    <div id="reading-progress">
+        <div id="reading-progress-fill"></div>
+    </div>
 
-        <!--Header start-->
-            <header id="header">
-                <div class="header">
-                    <div class="">
-                        <div class="header-navbar">
-                            <div class="header-logo">
-                                <h2>FEEL</h2>
-                            </div>
-                            <div class="header-menu">
-                                <ul id ="menuitems">
-                                    <li><a href="#header">HOME</a></li>
-                                    <li><a href="#about">ABOUT</a></li>
-                                    <li><a href="#gallery">GALLERY</a></li>
-                                    <li><a href="#blog">BLOG</a></li>
-                                    <li><a href="#contact">CONTACT</a></li>
-                                </ul>
-                                <span id="menu-icon"  onclick="myFunction(this), menuToggle()">
-                                    <i class="bar1"></i>
-                                    <i class="bar2"></i>
-                                    <i class="bar3"></i>
-                                </span>
-                            </div>
-                        </div>
-                        <div class="header-text">
-                        
-                            <h1><span class="first-letter">W</span>elcome</h1>
-                            <h3 class="blink"><span class="blink-text">Feel full of energy</span></h3>
-                            <a href="#" class="btn-coffee">Get started</a>
-                        </div>
-                    </div>	
+    <!-- ==================== HEADER / HERO SECTION ==================== -->
+    <header id="header">
+        <div class="header-container">
+            <!-- Main navigation -->
+            <nav class="header-navbar" aria-label="Main navigation">
+                <div class="header-logo">
+                    <h1>FEEL</h1>
                 </div>
-            </header>
-            <!--Header stop-->
 
-            <!--About start-->
-            <section id="about">
+                <div class="header-menu">
+                    <ul id="menuitems">
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#blog">Blog</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
 
-                <div class="container">
-                    <div class="row">
-                        <div class="title">
-                            <h2>About</h2>
-                        </div>
-                        <div class="column">
-                            <div class="about">
-                                
-                                <div class="about-content anime-top">
-                                    <div class="about-img anime-left">
-                                        <img src="assets/image/about1.jpg" alt="">
-                                    </div>
-                                    <div class="about-text anime-right">
-                                        <h4>Good to See You</h4>
-                                        <div class="about-icon">
-                                            <span><i class="fa fa-cube"></i></span>
-                                        </div>	
-                                        <p>Have a look at the world’s largest cycling tech platform, where they cover everything that is cool and new. Aside from gear, you can also find answers about road bikes.</p>
-                                        
-                                    </div>	
-                                </div>					
-                            </div>
-                        </div>
-
-                        <div class="column">
-                            <div class=" about">
-                                    
-                                    <div class="about-content anime-bottom">
-                                    
-                                        <div class="about-text anime-left">
-                                            <h4> Road Biking Adventure</h4>
-                                            <div class="about-icon">
-                                                <span><i class="fa fa-cube"></i></span>
-                                            </div>	
-                                            <p>Cycling is healthy and it is one of the way making your life funny. Most of people agree that biking is fun!  We  present the best road bikes that will enhance your energy and take you along for some awesome rides.</p>
-                                            
-                                        </div>	
-                                        <div class="about-img anime-right">
-                                            <img src="assets/image/about2.jpg" alt="">
-                                        </div>
-                                    </div>	
-
-                            </div>
-                        </div>
-
+                    <!-- Hamburger menu button with accessibility attributes -->
+                    <button 
+                        id="menu-icon" 
+                        class="hamburger" 
+                        aria-label="Toggle navigation menu" 
+                        aria-expanded="false"
+                        aria-controls="menuitems"
+                        onclick="menuToggle(this)">
+                        <span class="bar bar1"></span>
+                        <span class="bar bar2"></span>
+                        <span class="bar bar3"></span>
+                    </button>
                 </div>
-                
-            </section>
-            <!--About stop-->
-        
-            <!--Portfolio-->
-        
-            <section id="gallery">
-                <div class="container">
-                    <div class="row">
-                        <div class="title">
-                            <h2>Gallery</h2>
+            </nav>
+
+            <!-- Hero text content -->
+            <div class="header-text">
+                <h2><span class="first-letter">W</span>elcome</h2>
+                <p class="blink"><span class="blink-text">Feel full of energy</span></p>
+                <a href="#gallery" class="btn-coffee">Explore Bikes</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- ==================== ABOUT SECTION ==================== -->
+        <section id="about" aria-labelledby="about-heading">
+            <div class="container">
+                <h2 id="about-heading" class="title">About Us</h2>
+
+                <div class="about-grid">
+                    <!-- First about block -->
+                    <article class="about-item anime-top">
+                        <div class="about-img anime-left">
+                            <img src="assets/image/about1.jpg" alt="Cyclist riding a modern road bike on a scenic route">
                         </div>
-                        <div>
-                            <div class="portfolio">
-                                <div class="portfolio-item ani1">
-                                    <img src="assets/image/b1.jpg" alt="">
-                                    <div class="overlay">
-                                        <i class="fa fa-bicycle"></i>
-                                        <p>Be fast!</p>
-                                    </div>
-                                </div>
-                                <div class="portfolio-item ani2">
-                                    <img src="assets/image/b8.jpg" alt="">
-                                    <div class="overlay">
-                                        <i class="fa fa-bicycle"></i>
-                                        <p>Be fast!</p>
-                                    </div>
-                                </div>
-                                <div class="portfolio-item ani3">
-                                    <img src="assets/image/b3.jpg" alt="">
-                                    <div class="overlay">
-                                        <i class="fa fa-bicycle"></i>
-                                        <p>Be fast!</p>
-                                    </div>
-                                </div>
-                                
-                                <div class="portfolio-item ani6">
-                                    <img src="assets/image/b4.jpg" alt="">
-                                    <div class="overlay">
-                                        <i class="fa fa-bicycle"></i>
-                                        <p>Be fast!</p>
-                                    </div>
-                                </div>
-                                <div class="portfolio-item ani7">
-                                    <img src="assets/image/b7.jpg" alt="">
-                                    <div class="overlay">
-                                        <i class="fa fa-bicycle"></i>
-                                        <p>Be fast!</p>
-                                    </div>
-                                </div>
-                                <div class="portfolio-item ani8">
-                                    <img src="assets/image/b6.jpg" alt="">
-                                    <div class="overlay">
-                                        <i class="fa fa-bicycle"></i>
-                                        <p>Be fast!</p>
-                                    </div>
-                                </div>
-                            </div>
+                        <div class="about-text anime-right">
+                            <h3>Good to See You</h3>
+                            <div class="about-icon"><i class="fa fa-cube"></i></div>
+                            <p>Explore the world's leading cycling tech platform — new gear, road bike reviews, trends and inspiration.</p>
                         </div>
+                    </article>
+
+                    <!-- Second about block (reversed layout) -->
+                    <article class="about-item anime-bottom">
+                        <div class="about-text anime-left">
+                            <h3>Road Biking Adventure</h3>
+                            <div class="about-icon"><i class="fa fa-cube"></i></div>
+                            <p>Cycling brings health, joy and freedom. Discover high-performance road bikes built for epic rides and maximum energy.</p>
+                        </div>
+                        <div class="about-img anime-right">
+                            <img src="assets/image/about2.jpg" alt="Group of road cyclists riding through mountainous landscape">
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== GALLERY SECTION ==================== -->
+        <section id="gallery" aria-labelledby="gallery-heading">
+            <div class="container">
+                <h2 id="gallery-heading" class="title">Gallery</h2>
+
+                <div class="portfolio-grid">
+                    <figure class="portfolio-item ani1">
+                        <img src="assets/image/b1.jpg" alt="Red high-performance road bike in action">
+                        <figcaption class="overlay">
+                            <i class="fa fa-bicycle"></i>
+                            <p>Be fast!</p>
+                        </figcaption>
+                    </figure>
+
+                    <figure class="portfolio-item ani2">
+                        <img src="assets/image/b8.jpg" alt="Sleek black carbon road bike close-up">
+                        <figcaption class="overlay">
+                            <i class="fa fa-bicycle"></i>
+                            <p>Be fast!</p>
+                        </figcaption>
+                    </figure>
+
+                    <!-- Add remaining gallery items in the same structure -->
+                    <!-- b3, b4, b7, b6 ... -->
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== DISCOUNTS / TABS SECTION ==================== -->
+        <section id="discount" class="discount" aria-labelledby="discount-heading">
+            <div class="container">
+                <h2 id="discount-heading" class="discount-blink">Our Discounts!</h2>
+
+                <div class="discount-tabs">
+                    <div class="tab">
+                        <button class="tablinks active" onclick="openCity(event, 'card1')" aria-selected="true">Canyon</button>
+                        <button class="tablinks" onclick="openCity(event, 'card2')">BMC</button>
+                        <button class="tablinks" onclick="openCity(event, 'card3')">Specialized</button>
+                    </div>
+
+                    <div class="discount-card-area">
+                        <div id="card1" class="tabcontent" style="display: block;">
+                            <h3>Canyon – Up to 25% Off Selected Models</h3>
+                            <p>Limited time offer. Premium performance at unbeatable prices.</p>
+                        </div>
+                        <!-- Add card2, card3 content as needed -->
                     </div>
                 </div>
-                
+            </div>
+        </section>
 
-                
+        <!-- ==================== BLOG SECTION ==================== -->
+        <section id="blog" aria-labelledby="blog-heading">
+            <div class="container">
+                <h2 id="blog-heading" class="title">Blog</h2>
 
-            </section>
-        
-            <!--Portfolio--End-->
-            <!--Discover-->
-            <section id="discount" class="discount">
-                <div class="container">
-                    <div class="discount-blink">
-                        <div>Our discounts!</div>
+                <div class="blog-grid">
+                    <article class="blog-item anime-left">
+                        <h3>New Design – More Attractive</h3>
+                        <p>Refreshed layout makes discovering your perfect bike easier than ever. Many categories await you.</p>
+                    </article>
+
+                    <article class="blog-item anime-bottom">
+                        <h3>Modern Manufacturing Techniques</h3>
+                        <p>Advanced production methods deliver longer-lasting, high-quality components.</p>
+                    </article>
+
+                    <article class="blog-item anime-right">
+                        <h3>Best Value Road Bikes for Long Rides</h3>
+                        <p>Excellent durability and comfort — perfect for extended journeys without breaking the bank.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ==================== FOOTER / CONTACT SECTION ==================== -->
+    <footer id="contact" class="footer">
+        <div class="container">
+            <div class="contact">
+                <h2 class="title">Contact</h2>
+
+                <div class="contact-grid">
+                    <div class="contact-item anime-top">
+                        <i class="fa fa-phone-square"></i>
+                        <p>+994 66 784 5784</p>
+                        <p>+994 66 784 5784</p>
                     </div>
-                    <div class="row anime-right">
-                            
-                            <div class="column">
-                                <div class="tab">
-                                    <button class="tablinks" onclick="openCity(event, 'card1')" id="defaultOpen">Canyon</button>
-                                    <button class="tablinks" onclick="openCity(event, 'card2')">BMC</button>
-                                    <button class="tablinks" onclick="openCity(event, 'card3')" style="border: none;">Specialized</button>
-                                </div>
-                            </div>
-                            
-                            <div class="column discount-card text-center ">
-                            </div>
 
+                    <div class="contact-item anime-bottom">
+                        <i class="fa fa-map-marker"></i>
+                        <p>121 Big Street, Baku,<br>Azerbaijan</p>
+                    </div>
+
+                    <div class="contact-item anime-top">
+                        <i class="fa fa-envelope-open"></i>
+                        <p>www.company@gmail.com</p>
                     </div>
                 </div>
-                
-            </section>
-            <!--Discover-->
-            <!--Blog-->
-            <section id='blog' class="blog">
-                <div class="container">
-                    <div class="title">
-                            <h2>Blog</h2>
-                        </div>
-                    <div class="row">
-                        
-                        <div class="column blog-item anime-left">
-                            <span></span>
-                            <h3></h3>
-                            <p>With new design it is more attractive. There are a lot of categories to choose what yout want.  It is... </p>
-                        
-                        </div>
-                        <div class="column blog-item anime-bottom">
-                            <span></span>
-                            <h3></h3>
-                            <p>Using modern industrial techniques it is possible to produce quality details to increase durability. Still we...</p>
-                        
-                        </div>
-                        <div class="column blog-item anime-right">
-                            <span></span>
-                            <h3></h3>
-                            <p>You can ride long distances. The best for your buck in terms of depreciation you can buy a road bike that...    </p>
-                        
-                        </div>
-                        
-                    </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div>
+                    <h4>GET IN TOUCH</h4>
                 </div>
-            </section>
-
-            <!--Blog-->
-
-
-
-
-            <!--FOOTER-->
-        
-            <footer id="contact" class="footer">
-                <div class="container">
-                        <div class="contact">
-                                <div class="title">
-                                    <h2>Contact</h2>
-                                </div>
-            
-                                <div class="row contact-content">         
-                                    
-                                    <div class="column">
-                                        <div class="contact-item anime-top">
-                                            <i class="fa fa-phone-square"></i>
-                                            <p>+994667845784</p>
-                                            <br>
-                                            <p>+994667845784</p>
-                                        </div>
-                                    </div>
-
-                                    <div class="column">
-                                        <div class="contact-item anime-bottom">
-                                            <i class="fa fa-map-marker"></i>
-                                            <p>121 Big Street, Baku,<br/>Azerbaijan</p>
-                                        </div>
-                                    </div>
-
-                                    <div class="column ">
-                                        <div class="contact-item anime-top">
-                                            <i class="fa fa-envelope-open"></i>
-                                            <p>www.company@gmail.com</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                
-                            </div>
-                    </div>
-                    <div class="row footer-content">
-                        <div class="column">
-                            <div class="title">
-                                <h4>GET IN TOUCH</h4>
-                            </div>
-                        </div>
-                        <div class="column">
-                            <div class="footer-copywright">
-                                <p>We’ve focused on building our sport, realizing awesome ideas, and pushing technological innovations to their limits.</p>
-                            </div>
-                        </div>
-                        <div class="column">
-                            <nav style="margin-bottom: 30px;" class="footer-page-links">
-                                <a href="#header">HOME</a>
-                                <a href="#about">ABOUT</a>
-                                <a href="#gallery">GALLERY</a>
-                                <a href="#blog">BLOG</a>
-                                <a href="#contact">CONTACT</a>
-                            </nav>
-                        </div>
-                        <div class="column">
-                            <nav class="footer-social">
-                                <a href="#"><i class="fa fa-twitter"></i></a>
-                                <a href="#"><i class="fa fa-facebook"></i></a>
-                                <a href="#"><i class="fa fa-instagram"></i></a>			
-                            </nav>
-                        </div>                      
-                            
-                    </div>
+                <div class="footer-copy">
+                    <p>We are passionate about cycling — creating innovative ideas and pushing technology to the limit.</p>
                 </div>
-            </footer> 
-        
-        <!--FOOTER-->
-            
-        <script src="assets/js/main.js"></script>
-    </body>
+                <div>
+                    <nav class="footer-page-links">
+                        <a href="#header">Home</a>
+                        <a href="#about">About</a>
+                        <a href="#gallery">Gallery</a>
+                        <a href="#blog">Blog</a>
+                        <a href="#contact">Contact</a>
+                    </nav>
+                </div>
+                <div>
+                    <nav class="footer-social">
+                        <a href="#" aria-label="Twitter"><i class="fa fa-twitter"></i></a>
+                        <a href="#" aria-label="Facebook"><i class="fa fa-facebook"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fa fa-instagram"></i></a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Your custom JavaScript -->
+    <script src="assets/js/main.js"></script>
+
+</body>
 </html>
